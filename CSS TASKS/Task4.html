@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+        #shape1, #shape2, #shape3, #shape4 {
+            height: 50px;
+            width: 100px;
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 0px;
+            margin: 10px;
+        }
+        #shape1 {
+            background-color: green;
+        }
+        #shape2 {
+            background-color: blue;
+        }
+        #shape3 {
+            background-color: red;
+        }
+        #shape4 {
+            background-color: yellow;
+        }
+        #container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        #shapes {
+            display: flex;
+            flex-direction: column;
+        }
+        #text {
+            margin-left: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #shape1:hover{
+            width: 200%;
+            transition: 1s;
+            position: relative;
+            cursor: pointer;
+        }
+        #shape2:hover{
+            width: 200%;
+            background-color: blueviolet;
+            transition: 1s;
+            cursor: pointer;
+        }
+        #shape3:hover{
+            width: 200%;
+            opacity: 40%;
+            transition: 1s;
+            cursor: pointer;
+        }
+        #shape4:hover{
+            width: 200%;
+            border: 20px solid red;
+            transition: 1s;
+            cursor: pointer;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="shapes">
+            <div id="shape1"></div>
+            <div id="shape2"></div>
+            <div id="shape3"></div>
+            <div id="shape4"></div>
+        </div>
+        <div id="text">
+            <p><h1>Hover left side of navigation bar to see magic....!</h1></p>
+        </div>
+    </div>
+</body>
+</html>

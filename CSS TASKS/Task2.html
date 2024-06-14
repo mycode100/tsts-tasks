@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+         }
+         
+         .nav-container {
+            display: flex;
+            justify-content: space-around;
+         }
+         
+         .vertical-nav, .horizontal-nav {
+            border: 1px solid #000;
+            padding: 20px;
+         }
+         
+         .vertical-nav h3, .horizontal-nav h3 {
+            text-align: center;
+         }
+         
+         .vertical-nav ul, .horizontal-nav ul {
+            list-style-type: none;
+            padding: 0;
+         }
+         
+         .vertical-nav ul li, .horizontal-nav ul li {
+            margin: 5px 0;
+         }
+         
+         .vertical-nav ul li a {
+            display: block;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+         }
+         
+         .vertical-nav ul li a:hover {
+            background-color: #f0e68c;
+         }
+         
+         .horizontal-nav ul {
+            display: flex;
+            justify-content: center;
+         }
+         
+         .horizontal-nav ul li {
+            margin: 0 10px;
+         }
+         
+         .horizontal-nav ul li a {
+            background-color: #d3d3d3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            background-color: blue;
+         }
+         
+         .horizontal-nav ul li a:hover {
+            background-color: yellow;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="vertical-nav">
+            <h3>Vertical Navigation Bar</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </div>
+
+        <div class="horizontal-nav">
+            <h3>Horizontal Navigation Bar</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
