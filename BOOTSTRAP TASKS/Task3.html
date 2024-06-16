@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .company-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            color: #000000;
+        }
+        .nav-link-custom {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000000;
+        }
+        .sign-up {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: 1px solid #38D2E7;
+            background: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            color: #38D2E7;
+        }
+        .pricing-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 45px;
+            color: #000000;
+        }
+        .pricing-description {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            color: #000000;
+        }
+        .pricing-card {
+            background: #F5EDEB;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            color: #000000;
+        }
+        .pricing-feature {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        .btn-get-started {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        .footer-custom {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+        }
+        .footer-link {
+            color: #000000;
+        }
+        .body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid p-5 bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-5">
+        <a class="navbar-brand company-name" href="#">Company Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Enterprises</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn sign-up">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-center mb-5">
+        <h1 class="pricing-header">Pricing</h1>
+        <p class="pricing-description">
+            Quickly build an effective pricing table for your potential customers with this Bootstrap example. 
+            It's built with default Bootstrap components and utilities with little customization.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card pricing-card p-4 text-center">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Free</h2>
+                    <ul class="list-unstyled">
+                        <li class="pricing-feature">10 users included</li>
+                        <li class="pricing-feature">2 GB of storage</li>
+                        <li class="pricing-feature">Email support</li>
+                        <li class="pricing-feature">Help center access</li>
+                    </ul>
+                    <button class="btn btn-outline-primary btn-block">Sign Up for Free</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card pricing-card p-4 text-center">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Pro</h2>
+                    <ul class="list-unstyled">
+                        <li class="pricing-feature">20 users included</li>
+                        <li class="pricing-feature">10 GB of storage</li>
+                        <li class="pricing-feature">Priority email support</li>
+                        <li class="pricing-feature">Help center access</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block btn-get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card pricing-card p-4 text-center">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Enterprise</h2>
+                    <ul class="list-unstyled">
+                        <li class="pricing-feature">30 users included</li>
+                        <li class="pricing-feature">15 GB of storage</li>
+                        <li class="pricing-feature">Phone & email support</li>
+                        <li class="pricing-feature">Help center access</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block btn-get-started">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom mt-5 p-3 text-center">
+        <p class="mb-0">© 2024 Company Name. All rights reserved.</p>
+        <p>
+            <a href="#" class="footer-link">Privacy</a> |
+            <a href="#" class="footer-link">Terms</a> |
+            <a href="#" class="footer-link">Support</a>
+        </p>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

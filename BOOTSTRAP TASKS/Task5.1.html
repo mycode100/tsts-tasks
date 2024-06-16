@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            flex: 1;
+            max-width: 200px;
+        }
+        .form-control-container {
+            flex: 2;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .form-control-container i {
+            position: absolute;
+            left: 10px;
+        }
+        .form-control {
+            padding-left: 30px;
+        }
+        .container-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .btn-send {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="container-box">
+        <form id="registrationForm" onsubmit="openNewForm(event)">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <div class="form-control-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <div class="form-control-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="form-control-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <div class="form-control-container">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <div class="form-control-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" class="form-control" id="address" placeholder="Enter address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <div class="form-control-container">
+                    <i class="fas fa-city"></i>
+                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <div class="form-control-container">
+                    <select class="form-control" id="state">
+                        <option value="" disabled selected>Select your state</option>
+                        <option>AP</option>
+                        <option>TN</option>
+                        <option>TS</option>
+                        <option>KN</option>
+                        <option>MP</option>
+                       
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Do you have hosting?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes">
+                    <label class="form-check-label" for="hostingYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no">
+                    <label class="form-check-label" for="hostingNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="projectDescription">Project Description</label>
+                <textarea class="form-control" id="projectDescription" rows="3" placeholder="Enter project description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-send">Send</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openNewForm(event) {
+        event.preventDefault();
+        
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+
+        const url = `Task5.2.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&address=${encodeURIComponent(address)}`;
+
+        window.open(url, '_blank');
+    }
+</script>
+</body>
+</html>
